@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/stepa/Documents/42prague/Core/Libft",
-      "program": "c:/Users/stepa/Documents/42prague/Core/Libft/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/nfs/homes/shoudek/Core/Libft",
+      "program": "/nfs/homes/shoudek/Core/Libft/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:58:18 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/03 14:58:18 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:48:16 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strdup(const char *src)
 	return (ptr);
 }
 
-
+/*
 #include <stdio.h>
 int	main(void)
 {
@@ -50,3 +50,4 @@ int	main(void)
 	printf("%s\n", src);
 	printf("%s", ft_strdup(src));
 }
+*/

@@ -6,20 +6,20 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 14:42:33 by shoudek           #+#    #+#             */
-/*   Updated: 2023/12/20 14:42:33 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:48:33 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <unistd.h>
-	
-size_t ft_strlcat(char *dst, const char *src, size_t size)
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t dstlen;
-	size_t srclen;
-	size_t j;
-	size_t result;
+	size_t	dstlen;
+	size_t	srclen;
+	size_t	j;
+	size_t	result;
 
 	j = 0;
 	result = 0;
@@ -31,20 +31,20 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 		result = srclen + dstlen;
 	else
 		result = srclen + size;
-	while(size != 0 && src[j] && dstlen < size - 1)
+	while (size != 0 && src[j] && dstlen < size - 1)
 		dst[dstlen++] = src[j++];
-	if(size > dstlen)
+	if (size > dstlen)
 		dst[dstlen] = '\0';
-	return(result);
+	return (result);
 }
 
-
-
+/*
 int	main(void)
 {
 	char	dst[10] = "Hello";
 	char	src[20] = ", world";
 
-	ft_strlcat(dst,src,12);
+	ft_strlcat(dst, src, 12);
 	printf("%s", dst);
 }
+*/

@@ -6,16 +6,16 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:55:46 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/03 11:55:46 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:49:17 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	j;
-	
+
 	j = ft_strlen(s);
 	while (j > 0)
 	{

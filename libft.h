@@ -6,15 +6,15 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2023/10/25 15:14:50 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:50:46 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-#include <stddef.h>
-#include <stdlib.h>
+# include <stddef.h>
+# include <stdlib.h>
 
 void ft_bzero(void *s, size_t n);
 int ft_isalpha(int c);
