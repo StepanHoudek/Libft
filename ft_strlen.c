@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:52:40 by shoudek           #+#    #+#             */
-/*   Updated: 2023/11/02 12:52:40 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:48:46 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,19 @@
 size_t	ft_strlen(const char *s)
 {
 	size_t	size;
-	
+
 	size = 0;
-	while(*s)
+	while (*s)
 	{
 		size++;
 		s++;
 	}
-	return size;
+	return (size);
 }
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
 	printf("%ld", ft_strlen("hey"));

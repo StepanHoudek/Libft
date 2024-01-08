@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:37:36 by shoudek           #+#    #+#             */
-/*   Updated: 2023/11/02 12:37:36 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:47:12 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,12 @@ int	ft_isalnum(int c)
 
 /*
 #include <stdio.h>
+
 int	main(void)
 {
-	char	c = '9';
+	char	c;
+
+	c = '9';
 	printf("%d", ft_isalnum(c));
 }
 */

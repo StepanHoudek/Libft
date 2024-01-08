@@ -6,18 +6,18 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 17:21:41 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/03 17:21:41 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:49:23 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	int	setlen;
 	int	s1len;
 	int	i;
-	
+
 	if (!s1 || !set)
 		return (0);
 	setlen = ft_strlen(set);
@@ -25,6 +25,5 @@ char *ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	while (i < setlen)
 	{
-		
 	}
 }
