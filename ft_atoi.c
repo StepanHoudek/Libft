@@ -6,11 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:25:39 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/03 14:25:39 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/08 14:26:37 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft.h";
 
 int	ft_atoi(const char *s)
 {
