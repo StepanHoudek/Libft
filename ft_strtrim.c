@@ -14,17 +14,33 @@
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-	int	setlen;
-	int	s1len;
-	int	i;
+	int		start;
+	int		end;
+	char	*ptr;
+	int		i;
 	
 	if (!s1 || !set)
 		return (0);
-	setlen = ft_strlen(set);
-	s1len = ft_strlen(s1);
+	start = 0;
+	end = ft_strlen(s1);
+	while (s1[start] != '\0' && ft_strchr(set,s1[start]))
+		start++;
+	while (end > start && ft_strchr(set,s1[end -1]))
+		end--;
+	ptr = malloc(sizeof(char) * (end - start) + 1);
+	if (!ptr)
+		return (0);
 	i = 0;
-	while (i < setlen)
+	while (start < end)
 	{
-		
+		ptr[i++] = s1[start++];
 	}
+	ptr[i] = '\0';
+	return (ptr);
+}
+
+#include <stdio.h>
+int	main(void)
+{
+	printf("%s",ft_strtrim("vfHHOvHfv", "vf"));
 }

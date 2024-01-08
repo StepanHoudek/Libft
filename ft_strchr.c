@@ -23,9 +23,11 @@ char *ft_strchr(const char *s, int c)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 
 int	main(void)
 {
 	printf("%s", ft_strchr("ahoaj", 'a'));
 }
+*/
