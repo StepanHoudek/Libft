@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 14:03:46 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 10:53:54 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 10:55:47 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	word_count(const char *s, char c)
 	{
 		if (s[i] == c && s[i - 1] != c && s[i - 1] != '\0')
 		{
-			printf("%c\n", s[i + 1]);
 			count++;
 		}
 		i++;
@@ -84,7 +83,6 @@ char	**ft_split(const char *s, char c)
 	char	**ptr;
 
 	count = word_count(s, c);
-	printf("%d\n", count);
 	ptr = malloc((count + 1) * sizeof(char **));
 	ptr[count] = 0;
 	return (fill_word((char *)s, c, ptr, count));
@@ -99,7 +97,8 @@ int	main(void)
 	int		i;
 
 	// printf("%d",);
-	ptr = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+	ptr = ft_split("lorem ipsum dolor sit amet,
+			consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
 	i = 0;
 	while (ptr[i] != 0)
 	{
