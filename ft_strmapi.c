@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 12:37:58 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 13:59:15 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 15:00:59 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	len = ft_strlen(s);
 	i = 0;
 	ptr = malloc(sizeof(char) * (len + 1));
+	if (ptr == NULL)
+		return (NULL);
 	while (s[i] != '\0')
 	{
 		ptr[i] = (*f)(i, s[i]);

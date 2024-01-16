@@ -6,14 +6,14 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 14:27:41 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 15:16:35 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
+//# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
 
@@ -50,5 +50,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

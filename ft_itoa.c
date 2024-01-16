@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 11:17:36 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 12:48:49 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 15:00:35 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char	*ft_itoa(int n)
 	num = n;
 	i = num_len(num);
 	ptr = malloc(sizeof(char) * (i + 1));
+	if (ptr == NULL)
+		return (NULL);
 	ptr[i] = '\0';
 	if (num == 0)
 		ptr[0] = '0';

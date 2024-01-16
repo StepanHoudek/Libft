@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 13:57:05 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 10:20:25 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 14:59:39 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	int	i;
 
+	if ((unsigned char *)dest == NULL && (unsigned char *)src == NULL)
+		return (NULL);
 	i = 0;
 	if (((size_t)dest - (size_t)src) < n)
 	{

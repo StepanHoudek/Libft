@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:58:18 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 14:48:16 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 14:56:49 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ char	*ft_strdup(const char *src)
 
 	i = 0;
 	ptr = (char *) malloc (sizeof(char) * ft_length((char *)src));
+	if (ptr == NULL)
+		return (NULL);
 	while (src[i] != '\0')
 	{
 		ptr[i] = src[i];
