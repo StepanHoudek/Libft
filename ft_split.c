@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 14:03:46 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 10:55:47 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 12:59:25 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	word_count(const char *s, char c)
 
 	count = 0;
 	i = 0;
+	if (s[0] == '\0')
+		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] == c && s[i - 1] != c && s[i - 1] != '\0')
@@ -97,8 +99,7 @@ int	main(void)
 	int		i;
 
 	// printf("%d",);
-	ptr = ft_split("lorem ipsum dolor sit amet,
-			consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+	ptr = ft_split("ahoj,jak", ',');
 	i = 0;
 	while (ptr[i] != 0)
 	{
