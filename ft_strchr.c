@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 11:36:30 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 14:48:04 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 10:30:07 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,25 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (s[0] != '\0')
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 			return ((char *)s);
 		s++;
+	}
+	if (s[0] == (unsigned char)c)
+	{
+		return ((char *)s);
 	}
 	return (0);
 }
 
 /*
 #include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {
-	printf("%s", ft_strchr("ahoaj", 'a'));
+	printf("%s\n", ft_strchr("teste", 'e' + 256));
+	printf("%s\n", strchr("teste", 'e' + 256));
 }
 */
+

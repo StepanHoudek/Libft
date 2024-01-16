@@ -6,11 +6,13 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 14:03:46 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 15:55:06 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/16 10:53:54 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <unistd.h>
 
 int	word_count(const char *s, char c)
 {
@@ -21,10 +23,15 @@ int	word_count(const char *s, char c)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == c && s[i + 1] != c && s[i + 1] != '\0')
+		if (s[i] == c && s[i - 1] != c && s[i - 1] != '\0')
+		{
+			printf("%c\n", s[i + 1]);
 			count++;
+		}
 		i++;
 	}
+	if (s[i - 1] != c && s[i - 1] != '\0')
+		count++;
 	return (count);
 }
 
@@ -77,6 +84,7 @@ char	**ft_split(const char *s, char c)
 	char	**ptr;
 
 	count = word_count(s, c);
+	printf("%d\n", count);
 	ptr = malloc((count + 1) * sizeof(char **));
 	ptr[count] = 0;
 	return (fill_word((char *)s, c, ptr, count));
@@ -88,9 +96,15 @@ char	**ft_split(const char *s, char c)
 int	main(void)
 {
 	char	**ptr;
+	int		i;
 
 	// printf("%d",);
-	ptr = ft_split(",,ahoj,jak", ',');
-	printf("%s", ptr[0]);
+	ptr = ft_split("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+	i = 0;
+	while (ptr[i] != 0)
+	{
+		printf("%s\n", ptr[i]);
+		i++;
+	}
 }
 */
