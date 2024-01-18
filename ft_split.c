@@ -6,13 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 14:03:46 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 15:00:22 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/18 09:53:47 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 int	word_count(const char *s, char c)
 {

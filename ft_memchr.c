@@ -6,12 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 12:09:01 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 14:51:20 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/18 09:53:11 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

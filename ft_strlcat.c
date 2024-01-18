@@ -6,13 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 14:42:33 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 14:48:33 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/18 09:54:00 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <unistd.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

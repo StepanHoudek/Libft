@@ -6,9 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:50:51 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/08 14:47:21 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/18 09:54:55 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

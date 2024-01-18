@@ -6,12 +6,11 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 11:17:36 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 15:00:35 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/01/18 09:53:05 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	num_len(long int num)
 {
