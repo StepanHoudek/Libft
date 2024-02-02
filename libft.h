@@ -6,16 +6,18 @@
 /*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/01/16 15:16:35 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/02 12:59:24 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-//# include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
+# include <stdint.h>
+# include <stdio.h>
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalpha(int c);
@@ -51,5 +53,13 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_c(char c, int *ptr_sum);
+void	ft_puthex(uintptr_t num, const char *format, int *ptr_sum);
+void	ft_putnbr_c(int n, int *ptr_sum);
+void	ft_putstr_c(char *s, int *ptr_sum);
+void	ft_putunsnbr(unsigned int n, int *ptr_sum);
+const char	*ft_format(const char *format, int *ptr_sum, va_list args);
+void	ft_handleptr(uintptr_t num, const char *format, int *ptr_sum);
+int	ft_printf(const char *format, ...);
 
 #endif
