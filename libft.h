@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/08 14:09:57 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 14:49:10 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 typedef struct s_list
 {
-	void		x;
+	int			x;
 	struct Node	*next;
 }				t_list;
 
