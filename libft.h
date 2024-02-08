@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/08 14:56:43 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 14:58:57 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,9 +70,9 @@ void				ft_handleptr(uintptr_t num, const char *format,
 						int *ptr_sum);
 int					ft_printf(const char *format, ...);
 void				ft_to_binary(unsigned int num);
-void				ft_lstadd_after(t_list *node, int value);
-void				ft_lstadd_end(t_list **root, int value);
-void				ft_lstadd_start(t_list **root, int value);
-void				ft_lstdeallocate(t_list **root);
+void				ft_lstadd_after(t_struct *node, int value);
+void				ft_lstadd_end(t_struct **root, int value);
+void				ft_lstadd_start(t_struct **root, int value);
+void				ft_lstdeallocate(t_struct **root);
 
 #endif
