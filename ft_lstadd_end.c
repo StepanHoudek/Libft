@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_end                                      :+:      :+:    :+:   */
+/*   ft_lstadd_end.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 13:14:21 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/08 13:16:07 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 13:27:36 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	lstadd_end(Node **root, int value)
+void	lstadd_end(t_list **root, int value)
 {
-	Node *new_node;
-	Node *curr;
+	t_list	*new_node;
+	t_list	*curr;
 
-	new_node = malloc(sizeof(Node));
+	new_node = malloc(sizeof(t_list));
 	if (!new_node)
 		return ;
 	new_node->x = value;
 	new_node->next = NULL;
 	if (*root == NULL)
 	{
-		*root = new_node;	
+		*root = new_node;
 		return ;
 	}
 	curr = *root;

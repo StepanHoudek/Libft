@@ -6,7 +6,7 @@
 /*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/08 13:16:03 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 13:28:11 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef struct Node
+typedef struct s_list
 {
 	int	x;
-    struct Node* next;
-}		Node;
+    struct Node*	next;
+}		t_list;
 
 void		ft_bzero(void *s, size_t n);
 int			ft_isalpha(int c);

@@ -6,25 +6,25 @@
 /*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 13:17:00 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/08 13:17:14 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 13:27:47 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	lstadd_start(Node **root, int value)
+void	lstadd_start(t_list **root, int value)
 {
-	Node *new_node;
-	Node *temp;
+	t_list	*new_node;
+	t_list	*temp;
 
-	new_node = malloc(sizeof(Node));
+	new_node = malloc(sizeof(t_list));
 	if (!new_node)
 		return ;
 	new_node->x = value;
 	new_node->next = NULL;
 	if (*root == NULL)
 	{
-		*root = new_node;	
+		*root = new_node;
 		return ;
 	}
 	new_node->next = *root;
