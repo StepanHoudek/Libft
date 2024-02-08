@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shoudek <shoudek@student.42prague.com>     +#+  +:+       +#+        */
+/*   By: shoudek <shoudek@student.42.cz>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:14:50 by shoudek           #+#    #+#             */
-/*   Updated: 2024/02/05 15:00:23 by shoudek          ###   ########.fr       */
+/*   Updated: 2024/02/08 13:16:03 by shoudek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef struct Node
+{
+	int	x;
+    struct Node* next;
+}		Node;
 
 void		ft_bzero(void *s, size_t n);
 int			ft_isalpha(int c);
